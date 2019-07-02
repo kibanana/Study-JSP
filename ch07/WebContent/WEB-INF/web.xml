@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ch07</display-name>
+  
+  <servlet>
+  	<servlet-name>Yewon</servlet-name>
+  	<jsp-file>/study_02.jsp</jsp-file>
+  	<init-param>
+  		<param-name>id</param-name>
+  		<param-value>my name!</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>pwd</param-name>
+  		<param-value>asdf1234*</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>Yewon Kim</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Yewon</servlet-name>
+  	<url-pattern>/kim.do</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>logEnabled</param-name>
+  	<param-value>true</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>디버</param-name>
+  	<param-value>true</param-value>
+  </context-param>
+</web-app>
