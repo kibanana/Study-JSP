@@ -7,25 +7,24 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-	out.isAutoFlush(); %> <br />
+<%= out.isAutoFlush(); %>
+<br />
 	
-	<%
-	out.getBufferSize(out.getBufferSize());
-	out.getRemaining(out.getRemaining());
-	//out.clearBuffer();
+<%
+	out.getBufferSize();
+	out.getRemaining();
 	out.clearBuffer();
 	
-	rCerpageContext.getRequest();
+	pageContext.getRequest();
 	
 	ServletRequest request2 = pageContext.getRequest();
 	ServletResponse response2 = pageContext.getResponse();
-JspWriter out2 = pageContext.getOut();	
+	JspWriter out2 = pageContext.getOut();	
 	
 	out.print(request.getParameter("name"));
 	out.print(request2.getParameter("name"));
 	
 	HttpSession session2 = pageContext.getSession();
-	%>
+%>
 </body>
 </html>

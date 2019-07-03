@@ -69,9 +69,9 @@ request.getParameterMap() 메서드 사용
 			out.println(petParam[i] + "<br>");
 		}
 %>
+
 <br>
-<strong>
-</strong>
+
 <%
 	Enumeration en2 = request .getHeaderNames();
 
