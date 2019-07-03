@@ -10,40 +10,37 @@
 </head>
 <body>
 	<%
-		request.setCharacterEncoding("UTF-8");
-	
+		request.setCharacterEncoding("utf-8");
 		String name = request.getParameter("name");
 		String title = request.getParameter("title");
 		String content = request.getParameter("content");
 		
 		Date date = new Date();
 		Long time = date.getTime();
-		String filename = time+ ".txt";
+		String filename = time + ".txt";
 		PrintWriter writer = null;
 		String result;
 		
 		try {
-			String filePath = application.getRealPath("/WEB-INF/bbs/" + filename);
+			String filePath = application.getRealPath("/bbs/" + filename);
 			out.println(filePath);
-			
 			writer = new PrintWriter(filePath);
 			writer.printf("제목 : %s %n", title);
 			writer.printf("글쓴이 : %s %n", name);
-			writer.printf(content);
-			
+			writer.println(content);
+			//out.println("<font color=red><b>게시물</b></font>이 저장되었습니다.");
 			writer.flush();
-			
 			result = "ok";
-		} catch(Exception e) {
+		}
+		catch(Exception e) {
 			out.println("오류 발생");
 			result = "fail";
-		} finally {
+		}
+		finally {
 			writer.close();
 		}
 		
 		response.sendRedirect("boardResult.jsp?result="+result);
 	%>
-
-
 </body>
 </html>

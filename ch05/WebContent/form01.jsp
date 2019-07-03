@@ -13,7 +13,6 @@
 <form action="proc01.jsp" method="post">
 	<input type="text" name="number">
 	<input type="submit" name="입력완료">
-	
 </form>
 
 </body>

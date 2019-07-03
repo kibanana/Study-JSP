@@ -12,10 +12,7 @@
 	String str = request.getParameter("result");
 	if(str.equals("ok")){
 		out.println("<span style='color:red;'>게시물</span>이 저장되었습니다.");
-	} else {
-		
 	}
-
 %>
 </body>
 </html>

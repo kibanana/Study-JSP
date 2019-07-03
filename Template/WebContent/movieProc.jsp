@@ -21,8 +21,9 @@
 
 <%
 	BufferedReader reader = null;
-	try { //인터넷, 파일(파일 경로), DB(작동, 점검 등) 처리 => 프로그램을 잘못 짠 건 아니지만 지정된 경로 등, 
-			//개발자가 예상치 못한 문제가 발생되는 것을 대비해서 예외처리를 하는 것.
+	try { 
+		//인터넷, 파일(파일 경로), DB(작동, 점검 등) 처리 => 프로그램을 잘못 짠 건 아니지만 지정된 경로 등, 
+		//개발자가 예상치 못한 문제가 발생되는 것을 대비해서 예외처리를 하는 것.
 		String filePath = application.getRealPath("/WEB-INF/movie.txt");	
 		//out.println(filePath);
 		reader = new BufferedReader(new FileReader(filePath));

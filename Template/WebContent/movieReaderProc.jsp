@@ -17,16 +17,13 @@
 </style>
 </head>
 <body>
-    <% 
-    	request.setCharacterEncoding("UTF-8");
-    	String filename = request.getParameter("FILE_NAME");
-    	//out.println(filename);
-    %>
-<h4>파일 이름 : <%=filename %></h4>
-
-<%
-
+<% 
+	request.setCharacterEncoding("UTF-8");
+	String filename = request.getParameter("FILE_NAME");
+	//out.println(filename);
 %>
+    
+<h4>파일 이름 : <%=filename %></h4>
 
 <%
 	BufferedReader reader = null;

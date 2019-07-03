@@ -9,47 +9,38 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class HelloServlet
- */
+
 @WebServlet("/HelloServlet")
 public class HelloServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+	private static final long serialVersionUID = 1L;       
+
     public HelloServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		response.setContentType("text/html; charset=utf-8");
-		PrintWriter out = response.getWriter(); //사용자의 웹 브라우저에 출력하는 메서드
+		response.setContentType("text/html;charset=utf-8");
+		PrintWriter out = response.getWriter();
 		out.println("<html>");
 		out.println("<head>");
-		out.println("<title>");
-		out.println("3-5");
-		out.println("</title>");
+		out.println("<title>3-5반</title>");
 		out.println("</head>");
 		out.println("<body>");
-		out.println("<p>집에 가고 싶어요 자고싶어요 졸려요</p>");
+		out.println("<p>이대형 선생님 제발 빨리좀 돌아오세요</p>");
 		out.println("</body>");
 		out.println("</html>");
 	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 
+	
 }
+
+
+
+
+
+
+
+

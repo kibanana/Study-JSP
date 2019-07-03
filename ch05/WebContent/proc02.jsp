@@ -18,7 +18,6 @@
 	} else {
 		out.println("<strong>" + name + "</strong>님은 미성년자입니다.");
 	}
-
 %>
 </body>
 </html>

@@ -15,7 +15,7 @@ session="true"
 </head>
 <body>
 <h2>page 디렉티브 연습 - info 속성</h2>
-<%=getServletInfo() %>
+<%= getServletInfo() %>
 <h2>page 디렉티브 연습 - info 속성</h2>
 <%
 	Timestamp now = new Timestamp(System.currentTimeMillis());

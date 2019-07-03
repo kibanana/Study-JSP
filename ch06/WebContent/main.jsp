@@ -17,16 +17,19 @@ include : 여러 jsp 파일에서 공통으로 사용되는 부분을 별도의 
 <br>
 ========================== 액션 태그를 이용한 include ==========================
 <br>
+
 <span style="color: red; font-size: 30px;">
 <jsp:include page="intag.jsp" />
 </span>
+
 <br>
+
 <span style="color: blue; font-size: 30px;">
 <jsp:include page="intag1.jsp">
 	<jsp:param name="name" value="Kim Yewon" />
-
 </jsp:include>
 </span>
+
 <br>
 ========================== 액션 태그를 이용한 include ==========================
 <br>

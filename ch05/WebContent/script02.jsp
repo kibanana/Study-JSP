@@ -32,7 +32,6 @@
 <%=str2 %> <br>
 
 
-
 <%
 	String str[] = {"JSP", "JAVA", "Android", "HTML5"};
 	int i = (int)(Math.random() * str.length);

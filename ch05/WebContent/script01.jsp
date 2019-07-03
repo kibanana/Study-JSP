@@ -26,21 +26,21 @@
 <%
 	String str1 = str2 + "Server page";
 %>
-<%! 
+<%
 	String str2 = "Java";
 %>
 
-	출력결과 : <%= str1 %>
+출력결과 : <%= str1 %>
 	
 	
-	<%!
-		String id = "Kingdora";
-		public String getId() {
-			return id;
-		}
-	%>
+<%!
+	String id = "Kingdora";
+	public String getId() {
+		return id;
+	}
+%>
 	
-	id 변수 내용 <%=id %>
-	getId 메소드 실행 결과 <%= getId() %>
+id 변수 내용 <%=id %>
+getId 메소드 실행 결과 <%= getId() %>
 </body>
 </html>

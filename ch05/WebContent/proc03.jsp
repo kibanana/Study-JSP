@@ -24,7 +24,6 @@
 	}
 	
 	out.println("<strong>" + name + "</strong>님의 전화번호는 " + localNum + "-" + tel + "입니다.");
-
 %>
 </body>
 </html>
