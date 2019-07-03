@@ -18,3 +18,11 @@
   ```java
   <% response.setStatus(HttpServletResponse.SC_OK); %>
   ```
+  
+  ```java
+<% response.setStatus(200); %>
+  ```
+  위 코드와 동일한 과정
+  
+  현재 페이지가 정상적으로 응답되는 페이지임을 지정하는 코드.  
+  이 코드를 생략(or 513byte ↓)하면 웹 브라우저가 자체적으로 제공하는 화면을 표시함.  
