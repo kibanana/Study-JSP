@@ -1,9 +1,4 @@
-<%@page import="java.sql.PreparedStatement"%>
-<%@page import="java.sql.Statement"%>
-<%@page import="com.mysql.jdbc.Statement"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.DriverManager"%>
-<%@page import="com.mysql.jdbc.Connection"%>
+<%@page import="java.sql.*" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -20,12 +15,14 @@
 		String url = "jdbc:mysql://localhost:3309/mirim";
 		String user = "test";
 		String pass = "1234";
+		
 		Class.forName("com.mysql.jdbc.Driver");
-		conn = DriverManager.getConnection(url, user, pass);
+		DriverManager.getConnection(url, user, pass);
+		
 		out.println("연결 성공");
 		
 		Statement stmt = conn.createStatement();
-		ResultSet rs = stmt.executeQuery("select * from class");
+		ResultSet rs = stmt.executeQuery("SELECT * FROM class");
 		while(rs.next()) {
 			
 		}
